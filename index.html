@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>بابایی کالا | مودم، روتر و لوازم خانگی</title>
+  <meta name="description" content="بابایی کالا؛ فروش آنلاین مودم، روتر و لوازم خانگی با قیمت مناسب.">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav">
+
+      <a href="#" class="logo">
+        <span>بابایی</span> کالا
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">خانه</a>
+        <a href="#categories">دسته‌بندی</a>
+        <a href="#products-section">محصولات</a>
+        <a href="#discount">تخفیف‌ها</a>
+        <a href="#contact">تماس با ما</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="جستجوی محصول..."
+          >
+        </div>
+
+        <button class="cart-btn" onclick="openCart()">
+          🛒 سبد خرید
+          <span id="cart-count">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+
+        <div>
+          <span class="hero-badge">فروشگاه آنلاین بابایی کالا</span>
+
+          <h1>
+            تکنولوژی و لوازم خانه
+            <strong>با کیفیت و قیمت مناسب</strong>
+          </h1>
+
+          <p>
+            خرید آنلاین مودم، روتر و لوازم خانگی با ارسال سریع و پشتیبانی مطمئن.
+          </p>
+
+          <a href="#products-section" class="hero-btn">
+            مشاهده محصولات
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="container">
+
+        <div class="section-title">
+          <span>دسته‌بندی‌ها</span>
+          <h2>محصولات مورد نیازت را پیدا کن</h2>
+        </div>
+
+        <div class="categories-grid">
+
+          <button class="category-card" onclick="filterCategory('مودم')">
+            <div>📡</div>
+            <h3>مودم</h3>
+            <p>انواع مودم‌های اینترنت</p>
+          </button>
+
+          <button class="category-card" onclick="filterCategory('روتر')">
+            <div>📶</div>
+            <h3>روتر</h3>
+            <p>تجهیزات شبکه و وای‌فای</p>
+          </button>
+
+          <button class="category-card" onclick="filterCategory('لوازم خانگی')">
+            <div>🏠</div>
+            <h3>لوازم خانگی</h3>
+            <p>لوازم کاربردی خانه</p>
+          </button>
+
+          <button class="category-card" onclick="filterCategory('همه')">
+            <div>🛍️</div>
+            <h3>همه محصولات</h3>
+            <p>مشاهده تمام محصولات</p>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products-section" id="products-section">
+      <div class="container">
+
+        <div class="section-title">
+          <span>فروشگاه</span>
+          <h2>محصولات بابایی کالا</h2>
+        </div>
+
+        <div id="products" class="products-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- Discount -->
+    <section class="section" id="discount">
+      <div class="container">
+
+        <div class="discount-box">
+          <div>
+            <span>پیشنهاد ویژه</span>
+            <h2>تخفیف‌های جذاب بابایی کالا</h2>
+            <p>
+              محصولات منتخب را با قیمت ویژه تهیه کنید.
+            </p>
+          </div>
+
+          <a href="#products-section" class="hero-btn">
+            خرید کنید
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+
+        <div class="features">
+
+          <div class="feature">
+            <div>🚚</div>
+            <h3>ارسال سریع</h3>
+            <p>ارسال سفارش در سریع‌ترین زمان ممکن</p>
+          </div>
+
+          <div class="feature">
+            <div>🔒</div>
+            <h3>پرداخت امن</h3>
+            <p>پرداخت اینترنتی امن با درگاه معتبر</p>
+          </div>
+
+          <div class="feature">
+            <div>📞</div>
+            <h3>پشتیبانی</h3>
+            <p>پاسخگویی و همراهی با مشتریان</p>
+          </div>
+
+          <div class="feature">
+            <div>⭐</div>
+            <h3>کیفیت محصولات</h3>
+            <p>انتخاب محصولات باکیفیت و کاربردی</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+
+      <div>
+        <h2>بابایی کالا</h2>
+        <p>
+          فروش آنلاین مودم، روتر و لوازم خانگی
+        </p>
+      </div>
+
+      <div>
+        <h3>ارتباط با ما</h3>
+        <p>پشتیبانی فروشگاه بابایی کالا</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © ۱۴۰۵ بابایی کالا - تمامی حقوق محفوظ است.
+    </div>
+  </footer>
+
+  <!-- Cart -->
+  <div id="cart-overlay" class="cart-overlay" onclick="closeCart()">
+
+    <div class="cart-panel" onclick="event.stopPropagation()">
+
+      <div class="cart-header">
+        <h2>سبد خرید</h2>
+        <button onclick="closeCart()">✕</button>
+      </div>
+
+      <div id="cart-items"></div>
+
+      <div class="cart-footer">
+
+        <div class="cart-total-row">
+          <span>مجموع:</span>
+          <strong>
+            <span id="cart-total">0</span>
+            تومان
+          </strong>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+          ادامه و پرداخت
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
